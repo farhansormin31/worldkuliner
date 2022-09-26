@@ -1,3 +1,29 @@
-h3 {
-  font-size: 100px;
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 1.4fr 0.1fr;
+  grid-template-rows: 0.3fr 2.7fr 0.3fr;
+  grid-template-areas:
+    "header content content"
+    "header content  content"
+    "footer footer footer"
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.header {
+  grid-area: header;
+  background-color: blueviolet;
+}
+
+.content {
+  grid-area: content;
+  background-color: brown;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: blue;
 }
